@@ -1,0 +1,87 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Seth Mount GUI",
+   Icon = "badge-check", 
+   LoadingTitle = "Loading - Scripts..",
+   LoadingSubtitle = "by SethScripts.",
+   ShowText = false, -- for mobile users to unhide rayfield, change if you'd like
+   Theme = "Bloom", 
+
+   ToggleUIKeybind = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = false,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+Rayfield:Notify({
+   Title = "Warning!",
+   Content = "Script ini gratis tanpa di pungut biaya!",
+   Duration = 6.5,
+   Image = " airplay",
+})
+
+local Tab = Window:CreateTab("Tab 1", 4483362458) 
+local Section = Tab:CreateSection("Mount Tab")
+
+local Toggle = Tab:CreateToggle({
+   Name = "Auto Mount Gemi",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+    AutoG = Value
+if AutoG then 
+
+task.spawn(function()
+   while AutoG do
+task.wait(2)
+game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(CFrame.new(-5956.903, 2704.998, -768.569) * CFrame.Angles(0.0000, 1.9375, -0.0000))
+    task.wait(2)
+     local p = game.Players.LocalPlayer.Character.HumanoidRootPart
+       local w = workspace.SystemSummit:WaitForChild("Summit", 3)
+
+firetouchinterest(p,w,0)
+task.wait()
+firetouchinterest(p,w,1)
+
+ game.Players.LocalPlayer.Character.Humanoid.Health = 0
+task.wait(0.5)
+ end
+ end)
+  end
+   end,
+})
+
+
+local Tab = Window:CreateTab("Tab 2", 4483362458) 
+local Section = Tab:CreateSection("Rusuh Tab")
+
+local Button = Tab:CreateButton({
+   Name = "Alrect Sky Destroyer - Fixed By Seth",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/nuefMy0Y/raw"))()
+   end,
+})
