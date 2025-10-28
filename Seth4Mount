@@ -5,10 +5,50 @@ StarterGui:SetCore("SendNotification", {
     Text = "Loading 5-10 Detik..."
 })
 
-loadstring(game:HttpGet("https://pastefy.app/VWnOy2MH/raw"))()
-  else
+if game.PlaceId == 108581205213609 then
+
+loadstring(game:HttpGet("https://pastefy.app/rXO3lKmk/raw"))()
+
+else
+
 StarterGui:SetCore("SendNotification", {
     Title = "Warning !",
     Text = "Sengaja goblok apa emang goblok?"
 })
+
+if game.PlaceId == 76964310785698 then
+
+loadstring(game:HttpGet("https://pastefy.app/H8jQ9IEm/raw"))()
+
+else
+
+StarterGui:SetCore("SendNotification", {
+    Title = "Warning !",
+    Text = "Sengaja goblok apa emang goblok?"
+})
+
+if game.PlaceId == 117345375295598 then
+
+loadstring(game:HttpGet("https://pastefy.app/aL5HW67x/raw"))()
+
+else
+
+StarterGui:SetCore("SendNotification", {
+    Title = "Warning !",
+    Text = "Sengaja goblok apa emang goblok?"
+})
+
+if game.PlaceId == 102234703920418 then
+
+loadstring(game:HttpGet("https://pastefy.app/AeDs5sfL/raw"))()
+
+else
+
+StarterGui:SetCore("SendNotification", {
+    Title = "Warning !",
+    Text = "Sengaja goblok apa emang goblok?"
+})
+   end
+ end
+end
 end
