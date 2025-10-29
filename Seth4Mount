@@ -28,3 +28,9 @@ if game.PlaceId == 102234703920418 then
 loadstring(game:HttpGet("https://pastefy.app/AeDs5sfL/raw"))()
 else
 end
+
+if game.PlaceId == 138372253327599 then
+
+loadstring(game:HttpGet("https://pastefy.app/hnV9ZV02/raw"))()
+else
+end
