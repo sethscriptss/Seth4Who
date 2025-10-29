@@ -1,8 +1,8 @@
 local StarterGui = game:GetService("StarterGui")
 
 StarterGui:SetCore("SendNotification", {
-    Title = "Notif dari ayang ðŸ˜œðŸ’–",
-    Text = "Loading 5-10 Detik..."
+    Title = "Notif dari ayang 🤪🩷",
+    Text = "Loading - Checking.."
 })
 
 if game.PlaceId == 108581205213609 then
