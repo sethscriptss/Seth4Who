@@ -42,6 +42,6 @@ else
 end
 
 if game.PlaceId == 126688949103299 then
-loadstring(game:HttpGet+"https://pastefy.app/AL7fXjFb/raw"))()
+loadstring(game:HttpGet("https://pastefy.app/AL7fXjFb/raw"))()
 else
 end
